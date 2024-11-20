@@ -11,7 +11,14 @@
 - **C++**, **Python**  
 - **Reinforcement Learning** with Stable-Baselines3  
 - **Parallel Training** with SubprocVecEnv  
-- **2D Game Development** with Pygame  
+- **2D Game Development** with Pygame
+- **Blizzard API Integration**: Connecting to the Blizzard API to fetch and utilize game data  
+- **Data Analysis and Collection**: Processing and storing tracker data for meaningful insights
+- Setting up and configuring a **Nginx-like server** with C++, including:  
+  - Handling **HTTP requests** and sending **HTTP responses**  
+  - Implementing **CGI (Common Gateway Interface)**  
+  - Building efficient routing and connection management
+
 
 ### 🤝 Open to Collaborate
 I'm excited to collaborate on projects like **Transcendance** or other innovative ideas.
