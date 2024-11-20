@@ -1,4 +1,4 @@
-## Hi there 👋
+
 <h1 align="center">Hi 👋, I'm Oliver Krahl</h1>
 <h3 align="center">A passionate Full Stack Developer from Berlin</h3>
 
