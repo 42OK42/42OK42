@@ -4,7 +4,7 @@
 ---
 
 ### 🔭 Current Projects
-- [**Webserv**](https://github.com/42OK42/webserv): A web server built from scratch.
+- [**ft_trainscendence**](https://github.com/42OK42/ft_trainscendence): A full-stack web application featuring real-time multiplayer Pong, built with Python, JavaScript and WebSocket technology.
 - [**Hearthstone Battlegrounds Tracker**](https://github.com/42OK42/Hearthstone-Battlegrounds-Deck-Tracker): Always looking for contributors!
 
 ### 🌱 Currently Learning
