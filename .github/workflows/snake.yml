@@ -1,27 +1,68 @@
-name: Generate Snake
+# GitHub Action for generating a contribution graph with a snake eating your contributions.
+name: Generate Snake Animation
 
+# Controls when the action will run.
 on:
   schedule:
-    - cron: "0 0 * * *"  # Runs at 00:00 UTC every day
-  workflow_dispatch:     # Allows manual triggering
+    # every day at 12:00 UTC
+    - cron: "0 12 * * *"
+  # This command allows us to run the Action manually from the Actions tab.
+  workflow_dispatch:
+  
+  # Also run on every push on the main branch
+  push:
+    branches:
+    - main
 
+# The sequence of runs in this workflow:
 jobs:
-  build:
+  # This workflow contains a single job called "generate-snake"
+  generate-snake:
+    # The type of runner that the job will run on
     runs-on: ubuntu-latest
+    
+    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - uses: actions/checkout@v3
-      
-      - uses: Platane/snk@master
-        id: snake-gif
+      - name: Checkout repository
+        uses: actions/checkout@v3
+    
+      - name: Generate the snake animation
+        uses: Platane/snk@v3
+        id: snake-generator
         with:
+          # GitHub user name to read the contribution graph from
           github_user_name: ${{ github.repository_owner }}
-          svg_out_path: dist/github-contribution-grid-snake.svg
+
+          # List of files to generate with custom colors
+          outputs: |
+            dist/github-contribution-grid-snake.svg?color_snake=#3498db&color_dots=#ffffff,#9b59b6,#8e44ad,#6c3483,#4a235a
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#3498db&color_dots=#ffffff,#9b59b6,#8e44ad,#6c3483,#4a235a
+            dist/github-contribution-grid-snake.gif?color_snake=#3498db&color_dots=#ffffff,#9b59b6,#8e44ad,#6c3483,#4a235a
+
+          # Custom settings for a unique look
+          readme_mode: false
+          day_range: ""
+          weeks_amount: 30
+          generate_gif: true
+          animation_frame_count: 25
+          animation_frame_delay: 15
+          svg_out_width: 1000
+          svg_out_height: 210
+          cell_size: 12
+          cell_gap: 3
+
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
-      - name: Push to GitHub Pages
-        uses: crazy-max/ghaction-github-pages@v3
+      - name: Verify generated files
+        run: ls -la dist/
+        
+      - name: Deploy to GitHub Pages
+        uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
-          target_branch: output
+          target_branch: main
           build_dir: dist
+          commit_message: 🐍 Update contribution snake animation
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 

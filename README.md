@@ -100,12 +100,7 @@ I'm excited to collaborate on projects like **Transcendance** or other innovativ
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=42ok42&" alt="GitHub Streak Stats" />
 </p>
 
-### 🐍 Snake Game
-<div align="center">
-  <img src="https://github.com/42OK42/42OK42/blob/main/dist/snake.svg" alt="Snake Game" />
-</div>
-
 <!-- Snake animation -->
 <div align="center">
-  <img src="https://github.com/YourUsername/YourUsername/blob/output/github-contribution-grid-snake.svg" alt="Snake animation" />
+  <img src="https://github.com/42OK42/42OK42/blob/output/github-contribution-grid-snake.svg" alt="Snake animation" />
 </div>
