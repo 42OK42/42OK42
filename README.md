@@ -116,6 +116,4 @@ I'm excited to collaborate on projects like **Transcendance** or other innovativ
   <br/>
   
   <em>Snake animation of my GitHub contributions from the last year</em>
-  <br/>
-  <em>Generated: <!-- CURRENT_DATE --></em>
 </div>
