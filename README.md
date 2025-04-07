@@ -100,7 +100,22 @@ I'm excited to collaborate on projects like **Transcendance** or other innovativ
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=42ok42&" alt="GitHub Streak Stats" />
 </p>
 
-<!-- Snake animation -->
+---
+
+<h2 align="center">🐍 My GitHub Contributions</h2>
+
 <div align="center">
-  <img src="https://github.com/42OK42/42OK42/blob/output/github-contribution-grid-snake.svg" alt="Snake animation" />
+  <!-- GitHub Snake Animation -->
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/42OK42/42OK42/blob/output/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://github.com/42OK42/42OK42/blob/output/github-contribution-grid-snake.svg" />
+    <img alt="github-snake" src="https://github.com/42OK42/42OK42/blob/output/github-contribution-grid-snake.svg" />
+  </picture>
+  
+  <br/>
+  <br/>
+  
+  <em>Snake animation of my GitHub contributions from the last year</em>
+  <br/>
+  <em>Generated: <!-- CURRENT_DATE --></em>
 </div>
