@@ -101,6 +101,11 @@ I'm excited to collaborate on projects like **Transcendance** or other innovativ
 </p>
 
 ### 🐍 Snake Game
-<p align="center">
+<div align="center">
   <img src="https://github.com/42OK42/42OK42/blob/main/dist/snake.svg" alt="Snake Game" />
-</p>
+</div>
+
+<!-- Snake animation -->
+<div align="center">
+  <img src="https://github.com/YourUsername/YourUsername/blob/output/github-contribution-grid-snake.svg" alt="Snake animation" />
+</div>
